@@ -4,26 +4,50 @@ import {trigger , state,style, transition, animate, keyframes } from '@angular/a
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
-  animations: [
-    trigger('myAwesomeAnimation', [
-      state('small', style({
-        transform : 'scale(1)',
-      })),
-      state('large', style({
-        transform : 'scale(1.5)',
-      })),
-      transition('small<=> large',animate('300ms ease-in')),
-    ]),
-  ]
 })
 export class SkillsComponent implements OnInit {
-  state : string ='smalll'
+  dim=[500,500]
+  data=[
+    {
+      "name": "Java",
+      "value": 68
+    },
+    {
+      "name": "Kotlin",
+      "value": 44
+    },
+    {
+      "name": "Spring",
+      "value": 50
+    },
+    {
+      "name": "Hibernate",
+      "value": 40
+    },
+    {
+      "name": "MySQL",
+      "value": 30
+    },
+    {
+      "name": "AS400",
+      "value": 40
+    },
+    {
+      "name": "HTML & CSS",
+      "value": 40
+    },
+    {
+      "name": "Angular",
+      "value": 20
+    },
+    {
+      "name": "French",
+      "value": 30
+    }
+  ]
   constructor() { }
   
   ngOnInit() {
   }
-      animateMe(){
-        this.state=(this.state==='small' ? 'large' :'small')
-      }
 
 }

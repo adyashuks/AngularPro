@@ -1,8 +1,21 @@
-p{
-    width: 200px;
-    background: yellow;
-    margin: 100px auto;
-    text-align: center;
-    padding: 20px;
-    font-size: 10px;
-}
+.rightpane {
+    /* width: 220%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-color :white;
+    border-collapse: collapse;
+    margin-left : 10; */
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 0;
+background-color:white;
+  }
+  h1{
+  padding-left:10px;
+  }

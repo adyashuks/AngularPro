@@ -10,6 +10,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { HomeComponent } from './home/home.component';
 import {AboutmeComponent } from './aboutme/aboutme.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BsDropdownModule, ModalModule, PaginationModule, DatepickerModule, TabsModule } from 'ngx-bootstrap';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
     ]), 
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+   BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
