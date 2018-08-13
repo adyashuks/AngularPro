@@ -19,3 +19,17 @@ background-color:white;
   h1{
   padding-left:10px;
   }
+
+  .tex{ 
+    height: 100%;
+    width: 78%;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 0;
+background-color : white;
+background: url('/assets/port.jpg') no-repeat center;
+  
+}

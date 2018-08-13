@@ -1,6 +1,6 @@
 
 *{
-    padding:0px;
+    /* padding:0px; */
     margin:0px;
 }
     div ul img {
@@ -18,7 +18,7 @@
 div{
     width :300px;
     height :666px;
-    background-color: lightpink;
+    background-color: lightsalmon;
     z-index: 99;
 }
 div a{
@@ -37,7 +37,7 @@ div ul li {
     border-bottom: 2px solid white;
     }
 div ul li :hover {
-    background : lightcoral;
+    background : salmon;
     transition: linear all 0.40s;
     margin-left: 30px;
 }
