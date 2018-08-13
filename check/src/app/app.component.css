@@ -1,31 +1,57 @@
-.left {
-    width: 20%;
-    float: left;
-    background-color : black;
+
+*{
+    padding:0px;
+    margin:0px;
 }
-.navbar-nav{
-    margin: 10;
-    padding: 10;
-    list-style: none;
-    background-color: black;
+    div ul img {
+        list-style-type: none;
+        display: block;
+        margin-top : 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        width: 250px;
+        height: 200px;
+    
+    }
+div{
+    width :300px;
+    height :666px;
+    background-color: lightpink;
+    z-index: 99;
 }
-.navbar-nav li{
-    margin: 1px 0;
-    border: 0.5px solid #999;
+div a{
+    text-decoration: none;
+    color : white;
+    font-size: 25px;
+    /* padding:2px; */
+    padding-right:100px;
 }
-.navbar-nav li a{
-display: block;
-line-height: 3em;
-/* width: 50%; */
-text-decoration: none;
-color: white;
-/* position: center; */
-/* padding-left: 35%; */
-padding-right: 25%;
+
+div ul li {
+    list-style-type: none;
+    display: block;
+    margin:10px;
+    margin-block-end: 5px;
+    border-bottom: 2px solid white;
+    }
+div ul li :hover {
+    background : lightcoral;
+    transition: linear all 0.40s;
+    margin-left: 30px;
 }
-/* body{
-    background-color: black;
-} */
-a{
-    margin: 60px;
+div ul li a :hover {
+    background: white;
+    transition: linear all 0.40s;
+    margin-left: 10px;
+}
+.selected {
+    background: white;
+    color : black;
+}
+@media screen and (max-width:959px){
+    .container {
+        width:30%;
+    }
 }

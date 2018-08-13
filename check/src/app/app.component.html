@@ -5,25 +5,23 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-    <!-- <div [@myAwesomeAnimation]='state' (click)="animateMe()"> -->
-  <div class = "sect sectOne" >
+  <!-- <h4><img class = "intro" src = '/assets/Adyas.jpg'></h4> -->
+      <div class = "container " >
     <nav class="navbar navbar-default">
-        <!-- <div class="container-fluid"> -->
-            
-            <ul class="nav navbar-nav">
-                <li routerLinkActive="active current"><a routerLink="/home">HOME</a></li>
+          <ul class="nav navbar-nav">
+            <!-- <li><h2>ADYA SHUKLA</h2></li> -->
+              <img class = "intro" src = '/assets/Adyas.jpg'>
+                <li routerLinkActive="active current" ><a routerLink="/home">HOME</a></li>
                 <li routerLinkActive="active current"><a routerLink="/about-me">ABOUT ME</a></li>
                 <li routerLinkActive="active current"><a routerLink="/skills">SKILLS</a></li>
                 <li routerLinkActive="active current"><a routerLink="/contact">CONTACT</a></li>
             </ul>
-          <!-- </div> -->
-          <router-outlet></router-outlet>
+     <router-outlet></router-outlet>
     </nav>
     </div>
-  <!-- </div> -->
 </body>
 </html>
   
