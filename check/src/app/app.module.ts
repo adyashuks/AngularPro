@@ -12,13 +12,15 @@ import {AboutmeComponent } from './aboutme/aboutme.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BsDropdownModule, ModalModule, PaginationModule, DatepickerModule, TabsModule } from 'ngx-bootstrap';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent ,
     AboutmeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,NgxChartsModule,
@@ -26,7 +28,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
       {path : 'home', component:HomeComponent},
       {path : 'about-me', component:AboutmeComponent},
       {path : 'skills', component:SkillsComponent},
-      {path : '**' , component : HomeComponent}
+      {path : 'contact' , component :ContactComponent}
 
     ]), 
     HttpModule,

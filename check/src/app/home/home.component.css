@@ -2,17 +2,116 @@
         height: 100%;
         width: 78%;
         position: fixed;
-        /* z-index: 1; */
         top: 0;
         overflow-x: hidden;
         padding-top: 20px;
         right: 0;
-background-color : white;
-background: url('/assets/port.jpg') no-repeat center;
-      
-}
+        background-color : rgba(0, 0, 0, 0.76);
+
+    }
+        /* Image animation CSS */
+        #img-div {
+            position: relative;
+            max-width: 70%;
+            margin: auto;
+            top: 0;
+            left: 0;
+          }
+          
+          #image {
+            position: relative;
+            display: block;
+            max-width:100%;
+            max-height:100%;
+            box-shadow: 5px 5px 7px grey;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+          }
+          
+          #light-bulb-off {
+            width: 30%;
+            position: absolute;
+            top: 28%;
+            left: 54%;
+            transform: rotate(-30deg);
+          }
+          
+          #light-bulb-on {
+            width: 30%;
+            position: absolute;
+            top: 28%;
+            left: 54%;
+            transform: rotate(-30deg);
+            -webkit-filter: drop-shadow(0px 0px 25px rgb(255, 123, 0));
+          }   
+          @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            26% {
+                opacity: 0;
+            }
+            27% {
+                opacity: 1;
+            }
+            28% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            33% {
+                opacity: 0;
+            }
+            37% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        #light-bulb-on {
+            animation: blink 3s;
+            animation-iteration-count: infinite;
+        }
+        
 
 h1{
     padding: 35px;
-    color:black;
+    color:gold;
+    top: 40%;
+    left: 35%;
+}
+
+@media screen and (max-width:959px){
+    .container {
+        width:100%;
+    }
+    h1 { 
+        width : 100%;
+    }
+}
+@media screen and (max-width:640px){
+    .container {
+        width:30%;
+    }
+    h1 { 
+        width : 30%;
+    }
+}
+@media screen and (max-width:320px){
+    .container {
+        width:30%;
+    }
+    h1 { 
+        width : 30%;
+    }
 }

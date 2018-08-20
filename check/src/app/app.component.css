@@ -18,7 +18,7 @@
 div{
     width :300px;
     height :666px;
-    background-color: lightsalmon;
+    background-color:orange;
     z-index: 99;
 }
 div a{
@@ -52,6 +52,27 @@ div ul li a :hover {
 }
 @media screen and (max-width:959px){
     .container {
-        width:30%;
+        width:20%;
+    }
+    .intro { 
+        border-radius: 20%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .container {
+        width:20%;
+    }
+    .intro { 
+        width : 20%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .container {
+        width:100%;
+    }
+    .intro { 
+        width : 100%;
     }
 }

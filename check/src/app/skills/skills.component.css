@@ -1,11 +1,4 @@
-.rightpane {
-    /* width: 220%;
-    height: 100%;
-    position: relative;
-    float: right;
-    background-color :white;
-    border-collapse: collapse;
-    margin-left : 10; */
+/* .rightpane {
     height: 100%;
     width: 70%;
     position: fixed;
@@ -15,21 +8,47 @@
     padding-top: 20px;
     right: 0;
 background-color:white;
-  }
+  } */
   h1{
-  padding-left:10px;
+  /* align-content : center ; */
+  color: orange;
+  left: 50%;
+  
   }
 
   .tex{ 
+      z-index: 0;
     height: 100%;
     width: 78%;
     position: fixed;
-    /* z-index: 1; */
     top: 0;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 2%;
     right: 0;
-background-color : white;
-background: url('/assets/port.jpg') no-repeat center;
+    padding-left: 22%;
+background-color :rgba(0, 0, 0, 0.76);
   
+}
+@media screen and (max-width:640px){
+    .rightpane {
+        width:30%;
+    }
+    h1 { 
+        width : 30%;
+    }
+    ngx-charts-pie-grid{
+        width :30%;
+        }
+}
+
+@media screen and (max-width:320px){
+    .rightpane {
+        width:30%;
+    }
+    h1 { 
+        width : 30%;
+    }
+    ngx-charts-pie-grid{
+        width :30%;
+        }
 }
