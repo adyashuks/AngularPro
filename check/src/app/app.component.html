@@ -2,31 +2,63 @@
  <!DOCTYPE html>
 <html>
 <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-  <!-- <h4><img class = "intro" src = '/assets/Adyas.jpg'></h4> -->
-      <div class = "container " >
-    <nav class="navbar navbar-default">
-          <ul class="nav navbar-nav">
-            <!-- <li><h2>ADYA SHUKLA</h2></li> -->
-              <img class = "intro" src = '/assets/Adyas.jpg'>
-                <li routerLinkActive="active current" ><a routerLink="/home">HOME</a></li>
-                <li routerLinkActive="active current"><a routerLink="/about-me">ABOUT ME</a></li>
-                <li routerLinkActive="active current"><a routerLink="/skills">SKILLS</a></li>
-                <li routerLinkActive="active current"><a routerLink="/contact">CONTACT</a></li>
-            </ul>
-     <router-outlet></router-outlet>
-    </nav>
-    </div>
-</body>
-</html>
-  
-  
-
-
-
-
+        <div class = "container " >
+        <div class="row profile">
+        <div class="col-md-4">
+        <div class="profile-sidebar">
+        <!-- SIDEBAR USERPIC -->
+        <div class="profile-userpic">
+        <img src = "/assets/Adyas.jpg" class="img-responsive" alt="">
+        </div>
+        <div class="profile-usertitle">
+                  <div class="profile-usertitle-name">
+                    Adya Shukla
+                  </div>
+                  <div class="profile-usertitle-job">
+                  Associate Software Developer
+                  </div>
+        </div>
+        <!-- END SIDEBAR USER TITLE -->
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+        <ul class="nav">
+        <li routerLinkActive="active current">
+        <a routerLink="/home">
+        <i class="glyphicon glyphicon-home"></i>
+        Home </a>
+        </li><br>
+        <li routerLinkActive="active current">
+        <a routerLink="/about-me">
+        <i class="glyphicon glyphicon-info-sign"></i>
+        About Me </a>
+        </li><br>
+        <li routerLinkActive="active current">
+        <a routerLink="/skills">
+        <i class="glyphicon glyphicon-pencil"></i>
+        Skills </a>
+        </li>
+        <li routerLinkActive="active current">
+        
+        <a routerLink="/contact">
+        <i class="glyphicon glyphicon-envelope"></i>
+        Contact </a>
+        </li>
+        </ul>
+        </div>
+        <!-- END MENU -->
+        </div>
+        </div>
+        <router-outlet></router-outlet>
+        </div>
+        </div>
+        </body>
+        </html>

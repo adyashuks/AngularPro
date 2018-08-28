@@ -1,30 +1,3 @@
-.tex{ 
-    height: 100%;
-    width: 78%;
-    position: fixed;
-    /* z-index: 1; */
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    right: 0;
-background-color : rgba(0, 0, 0, 0.76);
-}
-a {
-    text-decoration: none;
-    color:orange;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    
-    margin:  5% 5% 5% 25%;
-    color: orange;
-
-}
 .fa-quora {
     color: red;
     padding:10px 14px;

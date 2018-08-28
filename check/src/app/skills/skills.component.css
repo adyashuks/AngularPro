@@ -9,14 +9,8 @@
     right: 0;
 background-color:white;
   } */
-  h1{
-  /* align-content : center ; */
-  color: orange;
-  left: 50%;
-  
-  }
 
-  .tex{ 
+  /* .tex{ 
       z-index: 0;
     height: 100%;
     width: 78%;
@@ -28,8 +22,10 @@ background-color:white;
     padding-left: 22%;
 background-color :rgba(0, 0, 0, 0.76);
   
-}
-@media screen and (max-width:640px){
+} */
+
+
+/* @media screen and (max-width:640px){
     .rightpane {
         width:30%;
     }
@@ -51,4 +47,4 @@ background-color :rgba(0, 0, 0, 0.76);
     ngx-charts-pie-grid{
         width :30%;
         }
-}
+} */

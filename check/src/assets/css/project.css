@@ -1,0 +1,171 @@
+.profile {
+    margin: 0 0;
+  }
+  .profile-sidebar {
+    padding: 10px 10px 5px 5px;
+    background :saddlebrown;
+    height: 100vh;
+    width: 40vh;
+  }
+  .profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50% !important;
+  }
+
+  .profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .profile-usertitle-name {
+    color:black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  .profile-usertitle-job {
+    text-transform: initial;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .profile-usermenu {
+    margin-top: 5px;
+  }
+
+  .profile-usermenu ul li a{
+    margin : 15px;
+    color: black;
+  }  
+
+  .profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+    color: black;
+  }
+
+  .profile-usermenu ul li a:hover {
+    background-color:brown;
+    color: #5b9bd1;
+  }
+
+  .profile-content {
+    padding: 20px;
+    background : burlywood;
+    min-height: 460px;
+    height: 100vh;
+    width: 76%;
+    position: fixed;
+    /* overflow-x: hidden; */
+    padding-top: 20px;
+    right: 0;
+
+  }
+
+/* Home Page */
+        /* Image animation CSS */
+        #bulb-div {
+            position: relative;
+            max-width: 70%;
+            margin: auto;
+            top: 0;
+            left: 0;
+          }
+          
+          #image {
+            position: relative;
+            display: block;
+            max-width:100%;
+            max-height:100%;
+            box-shadow: 5px 5px 7px grey;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+          }
+          
+          #light-bulb-off {
+            width: 30%;
+            position: absolute;
+            top: 28%;
+            left: 54%;
+            transform: rotate(-30deg);
+          }
+          
+          #light-bulb-on {
+            width: 30%;
+            position: absolute;
+            top: 28%;
+            left: 54%;
+            transform: rotate(-30deg);
+            -webkit-filter: drop-shadow(0px 0px 25px rgb(255, 123, 0));
+          }   
+          @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            26% {
+                opacity: 0;
+            }
+            27% {
+                opacity: 1;
+            }
+            28% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            33% {
+                opacity: 0;
+            }
+            37% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        #light-bulb-on {
+            animation: blink 3s;
+            animation-iteration-count: infinite;
+        }
+
+        h1{
+            padding: 35px;
+            color : black;
+            top: 40%;
+            left: 35%;
+        }
+
+        /* Contact CSS */
+        a {
+            text-decoration: none;
+            color : black;
+        }
+ h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom:5px;
+    color: black;
+    position: unset;
+
+}
+
