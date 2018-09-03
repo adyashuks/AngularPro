@@ -1,0 +1,83 @@
+body{
+    position: relative;
+}
+
+.navbar {
+    margin-bottom : 0;
+    border-radius : 0;
+    /* background-color :#5E4485 ;  */
+    color :#FFF ;
+    font-family: 'Aladin' !important;
+    font-size: 20px;
+    padding : 1% 0;
+    font-size : 1.2em;
+    border : 0;
+    }
+    .navbar-inverse{
+        background-color :#4B0082!important; 
+    }
+    .navbar-brand{
+    float: left;
+    min-height : 25px;
+    padding : 0 15px 5px !important;
+    }
+    .navbar-brand img{
+        height: 55px !important;
+    }
+    
+    .navbar-inverse .navbar-nav .active a,
+    .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+    color : #FFF !important;
+    /* background-color :#374785 !important; */
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        color : #FFF !important;
+    }
+
+    .myname h3 {
+        font-family: 'Asap';
+        font-size: 40px;
+        font-weight: 50px;
+    }
+    .myname h1 {
+        font-family: 'Poppins';
+        font-size: 40px;
+        font-weight: 50px;
+    }
+    
+    .img-circle{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width : 300px;
+         height : 300px;
+         border-radius: 50%;
+         border-style: solid;
+         border-width: 5px;
+         border-color: transparent;
+    }
+
+    .aboutme-img{
+        height: 300px;
+        width:300px;
+        margin-left: 2%;
+        margin-top: 20%;
+        margin-bottom: 30%;
+        border-radius: 10%;
+    }
+    .bg-1{
+        width: 100%;
+        height: 30%;
+        margin-top: 1%;
+        margin-right: 0%;
+        margin-bottom:-2%; 
+        background-color: orange;
+        font-size: '40px';
+        font-family: 'Asap'!important;
+        font-weight: 60px;
+        color: #ffffff;
+    }
+    .pfont{
+        font-family: 'Asap'!important;
+        font-size: 30px !important;
+    }
