@@ -25,11 +25,11 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule, NgxChartsModule,
     RouterModule.forRoot([
-      {path : 'home', component:HomeComponent},
-      {path : 'about-me', component:AboutmeComponent},
-      {path : 'skills', component:SkillsComponent},
-      {path : 'contact' , component :ContactComponent},
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path : 'home', component:HomeComponent, data: {depth: 1}},
+      {path : 'about-me', component:AboutmeComponent, data: {depth: 2}},
+      {path : 'skills', component:SkillsComponent , data: {depth: 3}},
+      {path : 'contact' , component :ContactComponent, data: {depth: 4}},
+      {path: '', redirectTo: 'home', pathMatch: 'full', data: {depth: 1}},
       {path: '**', redirectTo: 'home', pathMatch: 'full'}
 
     ]), 
