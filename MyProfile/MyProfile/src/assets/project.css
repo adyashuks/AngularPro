@@ -1,10 +1,11 @@
 /* html{
   margin : -1px;
 } */
-/* body{
-    position: relative;
-} */
-html, body {
+body{
+   overflow-y : hidden;
+   overflow-x: hidden;
+}
+html {
   overflow-x: hidden;
 }
 h3{
@@ -19,12 +20,12 @@ h3{
 }
 
 .navbar {
-    margin-bottom : 0;
+    margin-bottom : 0 !important;
     border-radius :0px !important;
     color :#FFF ;
     font-family: 'Aladin' !important;
     font-size: 20px;
-    padding : 1% 0;
+    padding : 1% 0% 2%;
     font-size : 1.2em;
     border : 0;
     margin-right: 0% !important;
@@ -35,12 +36,13 @@ h3{
     }
     .navbar-brand{
     float: left;
-    min-height : 20px;
+    min-height : 20/*  */px;
     padding : 0 15px 5px !important;
     }
     .navbar-brand img{
         height: 46px !important;
         padding-left: 8px;
+        margin-bottom: 5px !important;
     }
     .navbar-toggle{
       margin-right: 35px !important;
@@ -92,7 +94,7 @@ h3{
         margin-left: 2%;
         margin-top: 20%;
         margin-bottom: 30%;
-        border-radius: 10%;
+        border-radius: 50%;
     }
     .bg-1{
         width: 100%;
@@ -187,3 +189,18 @@ h3{
       .routeContainer>* {
         display:block;
       }
+
+      /* SVG chart element to center */
+      .ngx-charts-pie-grid_ngcontent-c1{
+        text-align: center !important;
+      }
+      #svgMain {
+       margin-left:auto;  
+       margin-right:auto;
+       display:block;}
+
+       #full{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+       }

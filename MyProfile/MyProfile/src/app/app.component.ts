@@ -1,6 +1,7 @@
 import { trigger, transition, group, query, style, animate } from '@angular/animations';
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

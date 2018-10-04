@@ -1,0 +1,41 @@
+modal-title{
+    color: black! important;
+}
+
+.form-container{
+    /* display: block; */
+    width: 90%;
+    padding: 2em;
+    margin:0% 0% 0% 0% !important ;
+    background-color: aqua;
+}
+
+.btn{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.label{
+    margin-bottom: 2%;
+}
+
+.alert{
+    background: green;
+    padding: 7px;
+    font-size: .9em;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: 2s alertAnim forwards;
+}
+
+@keyframes alertAnim{
+    from{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0)
+    }
+}
