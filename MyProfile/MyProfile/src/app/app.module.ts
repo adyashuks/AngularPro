@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
     AboutmeComponent,
     SkillsComponent,
     ContactComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule, NgxChartsModule,

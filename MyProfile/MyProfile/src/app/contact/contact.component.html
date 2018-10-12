@@ -1,83 +1,21 @@
-
 <div class="container-fluid bg-1 text-center">
-  <div id = "#full">
+  <div id="#full">
     <div class=" container-fluid myname ">
 
-<h1>Hello Folks !!!</h1>
-<p>
-  <b>If you have any queries regarding me then you can ask me.</b><br>
-</p>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
- <!-- Ask Me -->
-</button>
+      <h1>Hello Folks !!!</h1>
+      <app-modal></app-modal>
+      <p>
+        <b>If you have any queries regarding me then you can ask me.</b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <!-- <div class="modal-header"> -->
-        <h1 class="modal-title" id="exampleModalLabel">Submit your details</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      <!-- </div> -->
-      <div class="modal-body">
-
-        <div *ngIf="!name; else forminfo">
-          <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
-            <div class="form-container">
-              <div class="row columns">
-
-              
-                <label>Name <br>
-                  <input type="text" formControlName="name">
-                </label><br>
-                <!-- <div *ngIf="name.invalid" && "name.touched">
-                  <div *ngIf="name.errors.required">
-                    Name is require
-                  </div>
-                </div> -->
-
-
-                <label>Subject<br>
-                    <textarea formControlName="subject"></textarea>
-                </label><br>
-
-                <label>Email<br>
-                    <input type="text" formControlName="email">
-                </label><br>
-
-                <label for="validate">Maximum of 100 char</label>
-                <input type="checkbox" name="validate" formControlForm="validate" value="1">On
-                <!-- <input type="submit" class="button expanded" value="Submit Form" [disabled]="!rForm.valid"> -->
-
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <ng-template #forminfo>
-          <div class="form-container">
-            <div class="row columns">
-              <h1>{{name}}</h1>
-
-              <p>{{subject}}</p>
-              <p>{{email}}</p>
-            </div>
-          </div>
-        </ng-template>
-      </div>
-
-      <!-- <div class="modal-footer"> -->
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Submit</button> -->
-        <input type="submit" class="btn btn-primary" value="Submit Form" [disabled]="!rForm.valid">
-      <!-- </div> -->
-
+        
+      </p>
+      
     </div>
   </div>
-</div>
-</div>
-</div>
 </div>
