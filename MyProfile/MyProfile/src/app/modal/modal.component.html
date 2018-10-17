@@ -11,12 +11,48 @@
        </div>
       </div>
       <div class="modal-body">
-        <p>Model body text</p>
-        <label>Name : </label>&nbsp;<input type="text" formControlName="name">
+        <form [formGroup]="rForm" (ngSubmit)="onSubmit()">
+            <!-- // NAME -->
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                    <div *ngIf="f.name.errors.required">First Name is required</div>
+                </div>
+            </div>
+            
+            <!-- SUBJECT -->
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text" formControlName="subject" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }" />
+                <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                    <div *ngIf="f.subject.errors.required">Last Name is required</div>
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+            </div>
+
+            <!-- SUBMIT -->
+            <div class="form-group">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+            <button type="button" class="btn btn-default" (click)=onCloseHandled() >Close</button>
+        </form>
       </div>
-      <div class="modal-footer">
+
+
+
+      <!-- <div class="modal-footer">
         <button type="button" class="btn btn-default" (click)=onCloseHandled() >Close</button>
-      </div>
+      </div> -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal !-->

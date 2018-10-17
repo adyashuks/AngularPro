@@ -14,14 +14,18 @@ export class ModalComponent implements OnInit {
   name: string = '';
   email: string = '';
   display = 'none';
+  submitted = false;
+
   constructor(private modalService: NgbModal, private fb: FormBuilder) {
     this.rForm = fb.group({
       'name': [null, Validators.required],
       'subject': [null, Validators.compose([Validators.required, Validators.maxLength(100)])],
-      'email': [null, Validators.email],
+      'email': [null, Validators.required, Validators.email],
       'validate': ''
     });
   }
+  // Added as convenience getter for easy access to form fields
+  get f() { return this.rForm.controls; }
 
    addPost(post){
     this.name = post.name;
@@ -36,6 +40,15 @@ export class ModalComponent implements OnInit {
  onCloseHandled(){
   this.display='none'; 
 }
+  onSubmit(){
+    this.submitted = true;
+
+    if(this.rForm.invalid){
+      return;
+    }
+    alert('SUCCESS')
+  }
+
   ngOnInit() {
   }
 
